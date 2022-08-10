@@ -17,6 +17,7 @@ print(f'username is {username} and domain is {domain}')"""
 
 def email_slicer(email):
     no_of_attherate = []
+    valid_domain_suffix = {'.com', '.ca', '.org', '.in'}
     for x in email:
         if x == '@':
             no_of_attherate.extend(x)
@@ -25,5 +26,14 @@ def email_slicer(email):
     else:
         username = email[:email.index('@')]
         domain = email[email.index('@')+1:]
-        print(f'username is {username} and domain is {domain}')
+        if domain.find('.') == -1:
+            print("invalid domain")
+        else:
+            domain_suffix = domain[domain.index('.'):]
+            print(domain_suffix)
+            if domain_suffix in valid_domain_suffix:
+                print(f'username is {username} and domain is {domain}')
+            else:
+                print("domain not in list of accepted domains")
+
 email_slicer(email)

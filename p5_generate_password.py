@@ -5,7 +5,7 @@ passwd_str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz!@#$
 
 def passwd_generator(len_of_passwd):
     passwd = "".join(random.sample(passwd_str, len_of_passwd))
-    print(f"You can use the password {passwd}")
+    print(f"You can use the password as {passwd}")
 
 
 def validate_and_execute(passwd_len):

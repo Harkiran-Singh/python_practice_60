@@ -1,7 +1,7 @@
 import argparse
 
 """
-The script finds sum of command-line arguments using argparse
+The script finds sum of command-line arguments using argparse module
 """
 # Initialize the Parser
 parser = argparse.ArgumentParser(description='Process some integers.')

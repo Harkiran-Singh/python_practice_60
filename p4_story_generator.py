@@ -17,3 +17,5 @@ happened = ['made a lot of friends', 'ate a burger', 'found a secret key', 'wrot
 
 print(random.choice(when) + ', ' + random.choice(name) + ' and ' + random.choice(who) + ' that lived in '
       + random.choice(residence) + ', went to the ' + random.choice(went) + ' and ' + random.choice(happened))
+
+#print(random.sample(when, k=2))

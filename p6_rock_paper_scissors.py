@@ -1,5 +1,5 @@
-import random
-import sys
+from random import choice
+from sys import exit
 
 """
 rock beats scissors
